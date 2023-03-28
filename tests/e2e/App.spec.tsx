@@ -7,7 +7,6 @@ test.use({
 
 test("Main page test", async ({ mount, browserName, isMobile }) => {
   const page = await mount(<App />);
-  console.log(isMobile);
   await page.screenshot({
     type: "jpeg",
     quality: 100,
